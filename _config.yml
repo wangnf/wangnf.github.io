@@ -23,13 +23,13 @@ navigation:
   - name: Blog
     url: /
   - name: About
-    url: /about
+    url: /
   - name: Archive
-    url: /archive
+    url: /
   - name: Tags
-    url: /tags
+    url: /
   - name: Theme
-    url: https://github.com/wangnf/wangnf.github.io
+    url: /
 
 # Pagination
 paginate: 5
