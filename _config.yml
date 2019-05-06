@@ -19,15 +19,15 @@ avatar: /images/avatar.jpg
 # and URL Link(e.g. 'Theme' tab below) tabs. If you don't need one, just delete
 # it from the list(Delete '- name: ' and 'url: ', too!)
 navigation:
-  - name: Blog
-    url: /
+  - name: about
+    url: /about
 
 # Pagination
 paginate: 5
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  behance: "https://github.com/wangnf/wangnf.github.io"
+  behance: "wangnf"
   dribbble:
   email:
   facebook:
