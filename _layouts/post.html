@@ -24,20 +24,24 @@ layout: default
   <div class="entry">
     {{ content }}
   </div>
-  <div id="container"></div>
+
+  {% if site.comment_gitment_repo %}
+  <div id="gitmentContainer"></div>
   <link rel="stylesheet" href="https://billts.site/extra_css/gitment.css">
   <script src="https://billts.site/js/gitment.js"></script>
-<script>
-    var gitment = new Gitment({
-        owner: '990752800@qq.com',
-        repo: 'https://github.com/wangnf/wangnf.github.io.git',
-        oauth: {
-            client_id: '4337f820d5d9d9e2ffd8',
-            client_secret: 'fa723b37210f2cce5f03469e26575c140f3a5c41',
-        },
-     });
-    gitment.render('container'); //container为你要显示评论的id
-</script>
+  <script>
+      var gitment = new Gitment({
+          id: '<%= page.date %>',
+          owner: '{{site.github_username}}',
+          repo: '{{site.comment_gitment_repo}}',
+          oauth: {
+              client_id: '{{site.comment_gitment_clientId}}',
+              client_secret: '{{site.comment_gitment_clientSecret}}',
+          },
+      });
+      gitment.render('gitmentContainer')
+  </script>
+  {% endif %}
 
   <div class="pagination">
     {% if page.previous.url %}
