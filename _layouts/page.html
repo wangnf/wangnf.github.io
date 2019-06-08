@@ -9,19 +9,4 @@ layout: default
   <div class="entry">
     {{ content }}
   </div>
-  <div id="container"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-    var gitment = new Gitment({
-        id: , // 可选。这个选项不写（不是留空），默认为 location.href
-        owner: '990752800@qq.com',
-        repo: 'blog_comment',
-        oauth: {
-            client_id: '5c130a4bdffd8f49b275',
-            client_secret: '354c0fc7eb89676b0de39bcbeb04e467f0950b41',
-        },
-     });
-    gitment.render('container'); //container为你要显示评论的id
-</script>
 </article>
