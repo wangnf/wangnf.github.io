@@ -31,13 +31,21 @@ layout: default
 <script>
     var gitment = new Gitment({
         owner: ,
-        repo: ,
+        repo: 'wangnf.github.io',
         oauth: {
             client_id: '4337f820d5d9d9e2ffd8',
             client_secret: 'fa723b37210f2cce5f03469e26575c140f3a5c41',
         },
      });
     gitment.render('container'); //container为你要显示评论的id
+    $("#changerificwordspanid").typed({
+    strings: ["good", "happy", "healthy", "tall"],
+    typeSpeed: 100,
+    startDelay: 10,
+    showCursor: true,
+    shuffle: true,
+    loop:true
+});
 </script>
 
   <div class="pagination">
