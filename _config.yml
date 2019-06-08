@@ -103,8 +103,8 @@ exclude:
 
 gitment:
   enable: true
-  githubID: yourid
-  repo: yourrepo
-  ClientID: 4337f820d5d9d9e2ffd8
-  ClientSecret: fa723b37210f2cce5f03469e26575c140f3a5c41
+  githubID: 'yourid'
+  repo: 'gitment'
+  ClientID: '4337f820d5d9d9e2ffd8'
+  ClientSecret: 'fa723b37210f2cce5f03469e26575c140f3a5c41'
   lazy: true
